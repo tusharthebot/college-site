@@ -1,0 +1,20 @@
+//Animate
+// @import "plugins/animate";
+// @import "plugins/slick";
+// Global styles
+@import "common/global";
+@import "common/buttons";
+@import "common/variables";
+@import "common/reset";
+@import "global/header";
+@import "global/footer";
+// // Sections
+@import "sections/video-overlay.scss";
+@import "sections/content-with-boxes.scss";
+@import "sections/research-highlights.scss";
+@import "sections/intro-sec.scss";
+@import "sections/col-two-with-bg-img.scss";
+@import "sections/hero-banner.scss";
+@import "sections/testimonial-sec.scss";
+@import "sections/login.scss";
+

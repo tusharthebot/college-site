@@ -1,0 +1,826 @@
+@import "variables";
+// Font-face
+@font-face {
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap');
+}
+
+body {
+  position: relative;
+  box-sizing: border-box;
+  background: #000;
+  position: relative;
+  &::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    background: url("/dist/images/background.jpg.jpg") no-repeat;
+    background-size: cover;
+    opacity: 0.5;
+  }
+}
+
+li,
+ol,
+ul {
+  padding: 0;
+  margin: 0;
+  font-family: $font-families2;
+}
+
+section {
+  ul {
+    text-align: left;
+    li {
+      position: relative;
+      font-size: 18px;
+      font-weight: normal;
+      font-style: normal;
+      font-stretch: normal;
+      letter-spacing: normal;
+      font-family: $font-families;
+      @include tablet {
+        font-size: 16px;
+      }
+      @include tablet-down {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+a {
+  font-size: 18px;
+  font-weight: 300;
+  letter-spacing: normal;
+  text-decoration: none;
+  outline: 0;
+  cursor: pointer;
+  font-family: $font-families2;
+  color: $white;
+  &:hover {
+    outline: 0;
+    text-decoration: none;
+  }
+}
+
+audio,
+button,
+fieldset,
+figure,
+footer,
+form,
+h1,
+h3,
+h4,
+h5,
+h6,
+header,
+label,
+menu,
+nav,
+p,
+section,
+table,
+tbody,
+td,
+th,
+tr,
+video {
+  margin: 0;
+  border: 0;
+  color: $white;
+}
+
+img {
+  height: auto;
+  width: 100%;
+  max-width: 100%;
+  vertical-align: top;
+  border: 0;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: $container_width;
+  position: relative;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+}
+section {
+  width: 100%;
+  position: relative;
+  padding: 56px 0;
+  overflow: hidden;
+  max-width: 1920px;
+  margin: 0 auto;
+  @include desktop-large {
+    padding: 60px 0;
+  }
+  @include desktop {
+    padding: 50px 0;
+  }
+  @include tablet {
+    padding: 40px 0;
+  }
+  @include tablet-down {
+    padding: 25px 0;
+  }
+
+  &:after {
+    @include tablet-down {
+      display: none;
+    }
+  }
+}
+
+// padding classes
+.padding-large {
+  @include container-up {
+    padding: 100px 0;
+  }
+  @include tablet {
+    padding: 60px 0;
+  }
+  @include tablet-down {
+    padding: 40px 0;
+  }
+}
+
+.padding-large-top {
+  @include container-up {
+    padding-top: 100px;
+  }
+  @include tablet {
+    padding-top : 60px;
+  }
+  @include tablet-down {
+    padding-top: 40px;
+  }
+}
+
+.padding-large-bottom {
+  @include container-up {
+    padding-bottom: 100px;
+  }
+  @include tablet {
+    padding-bottom : 60px;
+  }
+  @include tablet-down {
+    padding-bottom: 40px;
+  }
+}
+
+.padding-medium {
+  @include container-up {
+    padding: 70px 0;
+  }
+  @include tablet {
+    padding: 30px 0;
+  }
+  @include tablet-down {
+    padding: 30px 0;
+  }
+}
+
+.padding-medium-top {
+  @include container-up {
+    padding-top: 70px;
+  }
+  @include tablet {
+    padding-top : 30px;
+  }
+  @include tablet-down {
+    padding-top: 20px;
+  }
+}
+
+.padding-medium-bottom {
+  @include container-up {
+    padding-bottom: 70px;
+  }
+  @include tablet {
+    padding-bottom: 30px;
+  }
+  @include tablet-down {
+    padding-bottom: 20px;
+  }
+}
+
+.padding-small {
+  @include desktop-up {
+    padding: 66px 0;
+  }
+  @include tablet {
+    padding : 30px 0;
+  }
+  @include tablet-down {
+    padding: 20px 0;
+  }
+}
+
+.padding-small-top {
+  @include desktop-up {
+    padding-top: 66px;
+  }
+  @include tablet {
+    padding-top: 30px;
+  }
+  @include tablet-down {
+    padding-top: 20px;
+  }
+}
+
+.padding-small-bottom {
+  @include desktop-up {
+    padding-bottom: 66px;
+  }
+  @include tablet {
+    padding-bottom: 30px;
+  }
+  @include tablet-down {
+    padding-bottom: 20px;
+  }
+}
+
+.padding-extra-small-bottom {
+  @include desktop-up {
+    padding-bottom: 36px;
+  }
+  @include tablet {
+    padding-bottom: 30px;
+  }
+  @include tablet-down {
+    padding-bottom: 20px;
+  }
+}
+.padding-extra-small-top {
+  @include desktop-up {
+    padding-top: 25px;
+  }
+  @include tablet {
+    padding-top: 20px;
+  }
+  @include tablet-down {
+    padding-top: 10px;
+  }
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset;
+  box-shadow: 0 0 0 30px white inset;
+}
+
+.v-middle-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.v-middle-inner {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.v-middle {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.col-wrapper:after,
+.column-wrapper:after,
+.container:after,
+.content-wrapper:after,
+.grid-wrapper:after,
+.two-third:after,
+.v-middle-wrapper:after,
+.wrapper:after,
+header:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+/*
+ * Heading and Paragraph.
+ */
+h1 {
+  font-size: 46px;
+  letter-spacing: normal;
+  font-weight: 100;
+  font-family: $font-families;
+  line-height: 1.2em;
+  @include desktop-large {
+    font-size: 46px;
+  }
+  @include desktop {
+    font-size: 46px;
+  }
+  @include tablet {
+    font-size: 32px;
+  }
+  @include phablet {
+    font-size: 30px;
+  }
+  @include phone {
+    font-size: 28px;
+  }
+  @include phone-down {
+    font-size: 28px;
+  }
+
+  span {
+    display: inline-block;
+    color: $white;
+    font-size: 56px;
+    font-weight: 700;
+    @include desktop-large {
+      font-size: 50px;
+    }
+    @include desktop {
+      font-size: 50px;
+    }
+    @include tablet {
+      font-size: 42px;
+    }
+    @include phablet {
+      font-size: 38px;
+    }
+    @include phone {
+      font-size: 34px;
+    }
+    @include phone-down {
+      font-size: 32px;
+    }
+  }
+}
+
+h2 {
+  font-size: 38px;
+  letter-spacing: normal;
+  font-weight: 100;
+  font-family: $font-families;
+  margin-bottom: 10px;
+  @include desktop-large {
+    font-size: 38px;
+  }
+  @include desktop {
+    font-size: 32px;
+  }
+  @include desktop-down {
+    margin-bottom: 15px;
+  }
+  @include tablet {
+    font-size: 28px;
+  }
+  @include tablet-down {
+    font-size: 26px;
+  }
+
+  span {
+    display: inline-block;
+    font-size: 40px;
+    font-weight: 500;
+    @include desktop-large {
+      font-size: 38px;
+    }
+    @include desktop {
+      font-size: 38px;
+    }
+    @include tablet {
+      font-size: 34px;
+    }
+    @include tablet-down {
+      font-size: 32px;
+    }
+  }
+}
+
+h3 {
+  font-size: 28px;
+  letter-spacing: normal;
+  font-weight: 100;
+  font-family: $font-families;
+  margin-bottom: 10px;
+  @include desktop-large {
+    font-size: 28px;
+  }
+  @include desktop {
+    font-size: 26px;
+  }
+  @include desktop-down {
+    margin-bottom: 15px;
+  }
+  @include tablet {
+    font-size: 24px;
+  }
+  @include phablet {
+    font-size: 22px;
+  }
+  @include phablet-down {
+    font-size: 20px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: $font-families;
+  margin-bottom: 9px;
+  @include desktop-large {
+    font-size: 22px;
+  }
+  @include desktop {
+    font-size: 22px;
+  }
+  @include tablet {
+    font-size: 20px;
+  }
+  @include phablet {
+    font-size: 18px;
+  }
+  @include phablet-down {
+    font-size: 18px;
+  }
+}
+
+h5 {
+  font-size: 22px;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: $font-families;
+  @include tablet-down {
+    font-size: 16px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  letter-spacing: normal;
+  font-weight: normal;
+  font-family: $font-families;
+}
+
+p {
+  font-size: 18px;
+  letter-spacing: normal;
+  font-weight: 300;
+  font-family: $font-families2;
+  @include tablet-down {
+    font-size: 16px;
+  }
+}
+
+.small-font {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: $font-families;
+}
+
+span {
+  font-size: 18px;
+  font-family: $font-families;
+  display: block;
+}
+
+/*
+ * Background Image.
+ */
+.bg-img {
+  overflow: hidden;
+  img {
+    @include object-fit(cover, inherit);
+  }
+}
+/* Background and text color classes */
+
+$i: 1;
+@while $i <= length($colors) {
+  $name: nth($colors, $i);
+  $color: nth($colors, $i + 1);
+  .text-#{$name} {
+    color: $color;
+  }
+  .bg-#{$name} {
+    background-color: $color;
+  }
+  $i: $i + 2;
+}
+
+/*
+ * Text Alignment.
+ */
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-padding-top {
+  padding-top: 0 !important;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.no-padding-responsive {
+  @include tablet-down {
+    padding: 0 !important;
+  }
+}
+
+.no-padding-bottom-responsive {
+  @include tablet-down {
+    padding-bottom: 0 !important;
+  }
+}
+
+/*
+ * Effects.
+ */
+.zoom-in img {
+  @include transform(scale(1));
+  @include transition(transform, 0.4s, ease-in-out);
+}
+
+.zoom-in:hover img {
+  @include transform(scale(1.06));
+}
+
+.zoom-bg .bg-img img {
+  @include transform(scale(1));
+  @include transition(transform, 0.4s, ease-in-out);
+}
+
+.zoom-bg:hover .bg-img img {
+  @include transform(scale(1.06));
+}
+
+.blend-mode {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  mix-blend-mode: multiply;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  font-weight: 400;
+  opacity: 1;
+  font-size: 14px;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  font-weight: 400;
+  opacity: 1;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  font-weight: 400;
+  opacity: 1;
+  font-size: 14px;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  font-weight: 400;
+  opacity: 1;
+  font-size: 14px;
+}
+
+body.stop-scroll {
+  overflow: hidden;
+}
+
+.wow {
+  visibility: hidden;
+}
+
+.o-visible {
+  overflow: visible;
+}
+
+.o-hidden {
+  overflow: hidden;
+}
+
+// Styling for index page
+
+.index {
+  .container {
+    > ul {
+      > li {
+        margin-bottom: 30px;
+
+        h3 {
+          margin-bottom: 20px;
+        }
+        ul {
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+}
+
+// Pattern
+
+.pattern-top-right {
+  position: absolute;
+  top: -38px;
+  right: -27px;
+  @include desktop {
+    top: -30px;
+  }
+  @include tablet {
+    top: -25px;
+  }
+}
+
+.intro-block {
+  text-align: left;
+  margin-bottom: 50px;
+  @include desktop-large {
+    margin-bottom: 40px;
+  }
+  @include desktop {
+    margin-bottom: 40px;
+  }
+  @include desktop-down {
+    margin-bottom: 30px;
+  }
+}
+
+section.breadcrumb {
+  padding: 12px 0;
+  background: $dark-blue;
+  .we-container {
+    font-size: 0;
+  }
+  a {
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-right: 15px;
+    margin-right: 7px;
+    position: relative;
+    // &.active {
+    //   color: $black;
+    // }
+    &:after {
+      content: "/";
+      position: absolute;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      font-size: 12px;
+    }
+    &:last-child {
+      padding: 0;
+      margin: 0;
+      pointer-events: none;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.play-video {
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80px;
+    height: 80px;
+    background: $dark-blue
+      url("../../clientlib-site/resources/images/aem//play_icon_blue.png")
+      no-repeat center;
+    background-size: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity ease-in-out 0.3s;
+    @include desktop {
+      width: 60px;
+      height: 60px;
+    }
+    @include desktop-down {
+      width: 50px;
+      height: 50px;
+    }
+    @include phone-down {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  &:hover {
+    &:after {
+      opacity: 1;
+    }
+  }
+}
+
+.left-side-color,
+.right-side-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  // background-color: $gallery;
+  @media only screen and (max-width: 1920px) {
+    display: none;
+  }
+}
+
+.right-side-color {
+  right: 0;
+  left: auto;
+}
+/*  flex classes */
+
+.col-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  .col-two {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-three {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+  }
+  .col-four {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-six {
+    max-width: 16.66%;
+    flex: 0 0 16.66%;
+  }
+}
+.row-reverse {
+  .col-wrap {
+    flex-direction: row-reverse;
+  }
+}
+.text-white {
+  h1,h2,h3,h4,h5,h6,p,span {
+    color: #ffffff;
+  }
+}
+
+.loader {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+  }
+}
+.page-container {
+  height: 0;
+  transition: height 0.9s ease-in-out;
+  &.loaded {
+    height: 100%;
+  }
+}

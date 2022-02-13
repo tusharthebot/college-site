@@ -1,0 +1,62 @@
+{
+  "name": "tushar-starter-code",
+  "version": "1.0.0",
+  "private": true,
+  "licenses": [
+    {
+      "type": "Copyright (C)"
+    }
+  ],
+  "scripts": {
+    "build": "gulp",
+    "watch": "gulp watch"
+  },
+  "engines": {
+    "node": ">= 4.5"
+  },
+  "dependencies": {
+    "ci": "^2.0.0",
+    "cli": "^1.0.1",
+    "gulp-add-src": "^1.0.0",
+    "gulp-append-prepend": "^1.0.4",
+    "gulp-color": "0.0.2",
+    "gulp-print": "^2.0.1",
+    "sort-stream": "^1.0.1"
+  },
+  "devDependencies": {
+    "asset-builder": "^1.1.0",
+    "asset-builder-nobower": "^1.1.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.23.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-changed": "^3.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-flatten": "^0.3.1",
+    "gulp-if": "^2.0.2",
+    "gulp-imagemin": "^4.0.0",
+    "gulp-jshint": "^2.0.4",
+    "gulp-less": "^3.3.2",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-rev": "^8.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-pngcrush": "^5.1.0",
+    "jshint": "^2.9.5",
+    "jshint-stylish": "^2.2.1",
+    "lazypipe": "^1.0.1",
+    "merge-stream": "^1.0.1",
+    "minimist": "^1.2.0",
+    "postcss-object-fit-images": "^1.1.2",
+    "run-sequence": "^2.2.0",
+    "traverse": "^0.6.6",
+    "wiredep": "^4.0.0"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "plugins.css": {
+      "files": [
+        "styles/plugins/*.scss",
+        "styles/plugins/*.css"
+      ]
+    },
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/jquery-ui.min.js",
+        "scripts/sections/*.js"
+      ],
+      "main": true
+    },
+    "plugins.js": {
+      "files": [
+        "scripts/plugins/*.js"
+      ]
+    }
+  },
+  "paths": {
+    "source": "assets/",
+    "dist": "dist/"
+  },
+  "config": {
+    "devUrl": "cisco-partner.test",
+    "minify": false
+  }
+}
