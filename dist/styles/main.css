@@ -57,7 +57,7 @@ body {
     right: 0;
     height: 100%;
     width: 100%;
-    background: url("/dist/images/background.jpg") no-repeat;
+    background: url("../images/background.jpg") no-repeat;
     background-size: cover;
     opacity: 0.5; }
 
@@ -1404,7 +1404,7 @@ section.breadcrumb {
   right: 0;
   opacity: 0;
   z-index: -1;
-  background-image: url("./dist/images/white_hex_grid.png");
+  background-image: url("../images/white_hex_grid.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
@@ -1640,7 +1640,7 @@ section.breadcrumb {
   left: 0;
   width: 28px;
   height: 28px;
-  background-image: url("../../../dist/images/svg/red_arrow.svg");
+  background-image: url("../images/svg/red_arrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   border-radius: 50%; }
@@ -1652,7 +1652,7 @@ section.breadcrumb {
 
 .research-highlights .bg-pattern {
   height: 100%;
-  background-image: url("../../../dist/images/svg/research-highlight-bg-pattern.svg");
+  background-image: url("../images/svg/research-highlight-bg-pattern.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right; }
@@ -2133,7 +2133,7 @@ section.breadcrumb {
       left: 0;
       width: 100%;
       height: 100%;
-      background: url("/dist/images/svg/banner_pattern.svg") no-repeat;
+      background: url("../images/svg/banner_pattern.svg") no-repeat;
       background-size: cover; }
     .hero-banner .bg-img img {
       width: 100%;
@@ -2172,7 +2172,7 @@ section.breadcrumb {
   left: 30px;
   width: 60px;
   height: 60px;
-  background: url("/dist/images/svg/comma.svg") no-repeat;
+  background: url("../images/svg/comma.svg") no-repeat;
   background-size: contain; }
 
 .testimonial .content-wrap .columns-wrapper {
