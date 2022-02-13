@@ -3689,7 +3689,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
   $('.page-container').hide();
   $(window).on('load', function () {
     setTimeout(function () {
-      $('.loader').fadeOut();
+      $('.loader').remove();
       $('.page-container').fadeIn(500);
       $('.page-container').addClass('loaded');
     }, 500);
