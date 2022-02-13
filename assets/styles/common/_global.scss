@@ -18,7 +18,7 @@ body {
     right: 0;
     height: 100%;
     width: 100%;
-    background: url("/dist/images/background.jpg.jpg") no-repeat;
+    background: url("/dist/images/background.jpg") no-repeat;
     background-size: cover;
     opacity: 0.5;
   }
@@ -727,9 +727,9 @@ section.breadcrumb {
     transform: translate(-50%, -50%);
     width: 80px;
     height: 80px;
-    background: $dark-blue
-      url("../../clientlib-site/resources/images/aem//play_icon_blue.png")
-      no-repeat center;
+    // background: $dark-blue
+    //   url("../../clientlib-site/resources/images/aem//play_icon_blue.png")
+    //   no-repeat center;
     background-size: 100%;
     border-radius: 50%;
     cursor: pointer;
