@@ -31,7 +31,7 @@
     "dist": "dist/"
   },
   "config": {
-    "devUrl": "cisco-partner.test",
+    "devUrl": "college-site",
     "minify": false
   }
 }

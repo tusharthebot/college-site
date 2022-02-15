@@ -21,6 +21,7 @@
   }
   .wrapper {
     font-size: 0;
+    position: relative;
     .col-two {
       display: inline-block;
       vertical-align: middle;
@@ -36,7 +37,20 @@
           li {
             display: inline-block;
             vertical-align: middle;
+            .sub-menu {
+              position: absolute;
+              top: 56px;
+              left: 50%;
+              width: 70%;
+              background-color: #000;
+              border-radius: 10px;
+              transform: translateX(-50%);
+              display: none;
+            }
           }
+        }
+        .btn-default {
+          margin-top: 0;
         }
       }
     }
